@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body onload="f1()">
+  
+</body>
+
+<script type="text/javascript">
+  function f1(){
+    var msg = confirm("{{ alert_text }}");
+    if (msg) {
+          window.location.href = "{% 'url mainocr:ocr' %}";
+      }
+  }
+
+</script>
+</html>
+

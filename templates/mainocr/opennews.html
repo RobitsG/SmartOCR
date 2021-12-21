@@ -1,0 +1,290 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="{% static 'ocr_css/style.c8d62505.css' %}"> 
+    <link rel="stylesheet" href="{% static 'ocr_css/loading.css' %}"/>
+    <link rel="stylesheet" href="{% static 'ocr_css/loadding1.css' %}"/>
+    <link href="{% static 'ocr_css/css2' %}" rel="stylesheet">
+    <link href="{% static 'ocr_css/css2(1)' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'ocr_css/katex.min.css' %}">
+    <script src="{% static 'jquery/jquery-3.6.0.js' %}"></script>
+    <link href="{% static 'ocr_none/favicon.ico' %}" rel="shortcut icon"> 
+    <title>
+        SmartOcr
+    </title>
+    <script src="{% static 'ocr_none/v3' %}"></script>
+</head>
+
+<body>
+    {% if flag %}
+    <script>alert("{{ text }}")</script>
+    {% endif %}
+    <nav class="bg-black">
+        <div class="container" >
+            <div class="font-semibold flex " style=" font-family: 'Times New Roman';color: aliceblue;width:75%;float:left;">
+                <div class="text-lg items-center flex" style="font-size: 30px">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" role="img" class="text-yellow-500" width="1.5em" height="2em"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <path d="M11 15H6l7-14v8h5l-7 14v-8z" fill="currentColor"></path>
+                    </svg>
+                SmartOCR
+                </div>
+            </div>
+                <div class="dropdown">
+                    <button class="dropbtn">模式</button><b></b>
+                  <div class="dropdown-content">
+                    <a href='{% url "mainocr:get_ocr" 0 %}'> 通用文字</a>
+                    <a href='{% url "mainocr:get_ocr" 1 %}'> 手写文字</a>
+                    <a href='{% url "mainocr:get_ocr" 2 %}'> 数字识别</a>
+                  </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">{{ user.username }}</button><b></b>
+                  <div class="dropdown-content">
+                    <a href='{% url "userprofile:edit" user.id %}'>个人信息</a>
+                    <a href="#" onclick="user_delete()">删除用户</a>
+                    <a href='{% url "userprofile:logout" %}'>退出登录</a>
+                  </div>
+                </div>
+        </div>
+    </nav>
+    <!-- loading动画 -->
+    <div id="preloader-body">
+        <div id="cube-wrapper">
+            <div class="cube-folding">
+                <span class="leaf1"></span>
+                <span class="leaf2"></span>
+                <span class="leaf3"></span>
+                <span class="leaf4"></span>
+            </div>
+            <span class="loading" data-name="Loading">Loading</span>
+        </div>
+    </div>
+    <!-- 调用lodding 动画 -->
+    <script>
+        // 末尾绑定window.onload事件 (也可以用jquery或者vue实现，只需要在window加载完毕后，触发隐藏2个div即可)
+        window.onload = function jindutiao() {
+            document.getElementById('cube-wrapper').style.display = "none";
+            document.getElementById('preloader-body').style.display = "none";
+        }
+    </script>
+
+    <div class="flex flex-col top-1.5" style="width: 60%;margin: 0 auto">
+
+
+        <div class="text-blue-400 text-x tag tag-purple mt-3 h-10" style="width: 88%;"> &nbsp 批量预测</div>
+        <form method="post" action="/main-ocr/multiple-ocr/{{ mode }}/" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="flex h-10 mt-3">
+                <!-- 批量上传-->
+                <div>
+                    <a href="javascript:;" class="file">
+                    <span class="text-center btn fileinput-button btn-widget w-24 h-10 px-5 rounded border" style="height: 40px;line-height: 32px;">
+                        <span class="text-center">批量上传</span>
+                        <input type="file" name="files" id="files" multiple>
+                    </span>
+                    </a>
+                </div>
+
+                <div class="w-3 h-10 "></div>
+
+                <!--批量预测-->
+                <div>
+                    <input class="btn-widget w-24 h-10 px-5 rounded border " type="submit" id="b0" value="批量预测">
+                </div>
+
+                <!--下载-->
+                <div class="w-3 h-10 "></div>
+
+                <div>
+                    <a name="downloadbtn" class="btn btn-widget w-24 h-10 px-5 rounded border" href='{% url "mainocr:download" %}' style="height: 40px;line-height: 32px;"> 下载</a>
+                </div>
+            </div>
+        </form>
+        
+
+        <div class="text-blue-400 text-x tag tag-b tag-purple mt-4 h-10" style="width: 88%;">&nbsp 单条预测</div>
+
+        <div>请上传你的图片：</div>
+
+        <div id="id1" style="width:800px;height:420px">
+            <form method="post" action="/main-ocr/ocr/{{ mode }}/" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="mt-3" style="width:390px;height:400px;float: left">
+                    <div class="flex h-10">
+                        <span class="btn fileinput-button btn-widget w-24 h-10 px-5 rounded border text-center" style="height: 40px;line-height: 32px;">
+                            <span>上传</span>
+                            <input type="file" id="img" name="img">
+                        </span>
+                    </div>
+                    <div class="h-2"></div>
+                    <div style="width:390px;height:300px;border: 1px solid #9cb6e0" class="rounded">
+                        <form class="container" enctype="multipart/form-data" method="post" id='formBox' name="form">
+                            <!-- 保存用户自定义的背景图片 -->
+                            {% if img_cleaned.img %}
+                                <img src="{{ img_cleaned.img.url }}" id="cropedBigImg" value='custom' alt="" title="自定义背景"/>
+                            {% else %}
+                                <img id="cropedBigImg" value='custom' alt="" title="自定义背景"/>
+                            {% endif %}
+                        </form>
+                    </div>
+                    <div class="h-2"></div>
+                    <button class="btn btn-primary" type="submit" id="notify">提交</button>
+                </div>
+            </form>
+
+            <div class="mt-3 ml-3" style="background:#ffffff;width:390px;height:400px;float: left ">
+                <div class="flex h-10">
+                    <div class="btn fileinput-button btn-widget w-24 h-10 px-5 rounded border text-center" style="height: 40px">
+                        结果
+                    </div>
+
+                </div>
+                <div class="h-2"> </div>
+                <div style="width:390px;height:300px;border: 1px solid #9cb6e0" class="rounded">
+                    <div>{{text}}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="py-3 bg-black fixed-bottom">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; madokacloud.top 2021</p>
+        </div>
+    </footer>
+</body>
+
+<script type=text/javascript>
+
+    $('#img').on('change',function() {
+        var filePath = $(this).val(),         //获取到input的value，里面是文件的路径
+            fileFormat = filePath.substring(filePath.lastIndexOf(".")).toLowerCase(),
+            src = window.URL.createObjectURL(this.files[0]); //转成可以在本地预览的格式
+
+        // 检查是否是图片
+        if (!fileFormat.match(/.png|.jpg|.jpeg/)) {
+            error_prompt_alert('上传错误,文件格式必须为：png/jpg/jpeg');
+            return;
+        }
+
+        $('#cropedBigImg').attr('src', src);
+
+    });
+
+    function user_delete() {
+        // 调用layer弹窗组件
+        layer.open({
+            title: "确认删除",
+            content: "确认删除用户资料吗？",
+            yes: function(index, layero) {
+                $('form#user_delete button').click();
+                layer.close(index);
+            },
+        })
+    }
+</script>
+
+<style>
+    .fileinput-button {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .fileinput-button input{
+        position:absolute;
+        right: 0px;
+        top: 0px;
+        opacity: 0;
+        -ms-filter: 'alpha(opacity=0)';
+        font-size: 200px;
+
+    }
+    .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+    .navbar-brand {
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+    .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+/* 下拉按钮样式 */
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #1177BB;
+}
+b{
+	border-style: solid;
+	border-width: 5px;
+	border-color: white transparent transparent transparent;
+	position: relative;
+	top: 13px;
+	left: 2px;
+}
+</style>
+</html>

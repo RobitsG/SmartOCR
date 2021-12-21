@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D. -->
+<html class="">
+<script async="" src="analytics.js.下载"></script>
+<script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/prompt.js"></script>
+<script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/runScript.js"></script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description"
+          content="We’re on a journey to advance and democratize artificial intelligence through open source and open science.">
+    <meta property="fb:app_id" content="1321688464574422">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@huggingface">
+    <meta property="og:title" content="distilbert-base-uncased · Hugging Face">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://huggingface.co/distilbert-base-uncased">
+    <meta property="og:image" content="https://huggingface.co/front/thumbnails/v2-2.png">
+
+    <link rel="stylesheet" href="style.c8d62505.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="css2" rel="stylesheet">
+    <link href="css2(1)" rel="stylesheet">
+    <link rel="stylesheet" href="katex.min.css">
+
+
+    <title>
+        distilbert-base-uncased · Hugging Face
+    </title>
+    <script src="v3"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-white dark:bg-gray-950 text-black ModelPage">
+<div class="flex flex-col min-h-screen ">
+    <header class="border-b border-gray-100 z-10">
+        <div class="w-full px-4 lg:px-6 xl:container flex items-center h-16">
+            <div class="flex flex-1 items-center"><a class="flex flex-none items-center mr-5 lg:mr-6"
+                                                     href="https://huggingface.co/"><img alt="Hugging Face&#39;s logo"
+                                                                                         class="md:mr-2 w-7"
+                                                                                         src="huggingface_logo.svg">
+                <span class="hidden text-lg font-bold whitespace-nowrap md:block">Hugging Face</span></a>
+                <div class="v2-quick-search relative flex-1 lg:max-w-sm mr-2 sm:mr-4 lg:mr-6"
+                     data-url="/api/quicksearch-html" search-type="all" with-links="true"><input autocomplete="off"
+                                                                                                 class="v2-quick-search-input w-full dark:bg-gray-950 form-input-alt h-9 pl-8 pr-3 focus:shadow-xl"
+                                                                                                 name=""
+                                                                                                 placeholder="Search models, datasets, users..."
+                                                                                                 spellcheck="false"
+                                                                                                 type="text"
+                                                                                                 role="combobox"
+                                                                                                 aria-controls="combobox-3273"
+                                                                                                 aria-expanded="true"
+                                                                                                 aria-autocomplete="list"
+                                                                                                 aria-haspopup="listbox">
+                    <svg class="absolute left-2.5 top-2.5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img"
+                         width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                        <path d="M30 28.59L22.45 21A11 11 0 1 0 21 22.45L28.59 30zM5 14a9 9 0 1 1 9 9a9 9 0 0 1-9-9z"
+                              fill="currentColor"></path>
+                    </svg>
+                    <ul class="v2-quick-search-results z-40 hidden absolute w-full overflow-hidden text-sm bg-white border border-gray-100 rounded-lg shadow-lg divide-y divide-gray-100 dark:divide-gray-900"
+                        role="listbox" id="combobox-3273"></ul>
+                </div>
+                <button id="v2-phone-nav-button"
+                        class="lg:hidden relative flex-none place-self-stretch flex items-center justify-center w-8"
+                        type="button">
+                    <svg class="v2-phone-nav-icon-open" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img"
+                         width="22" height="22" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"
+                         fill="currentColor">
+                        <path d="M4 24h24v2H4z"></path>
+                        <path d="M4 12h24v2H4z"></path>
+                        <path d="M4 18h24v2H4z"></path>
+                        <path d="M4 6h24v2H4z"></path>
+                    </svg>
+                    <svg class="v2-phone-nav-icon-close hidden" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img"
+                         width="1.1em" height="1.1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                        <path d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"
+                              fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav aria-label="Main" class="ml-auto hidden lg:block">
+                <ul class="flex items-center space-x-2">
+                    <li><a class="flex items-center group px-2 py-0.5 hover:text-indigo-700 dark:hover:text-gray-400"
+                           href="https://huggingface.co/models">
+                        <svg class="mr-1.5 text-gray-400 group-hover:text-indigo-500" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img"
+                             width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path class="uim-quaternary"
+                                  d="M20.23 7.24L12 12L3.77 7.24a1.98 1.98 0 0 1 .7-.71L11 2.76c.62-.35 1.38-.35 2 0l6.53 3.77c.29.173.531.418.7.71z"
+                                  opacity=".25" fill="currentColor"></path>
+                            <path class="uim-tertiary"
+                                  d="M12 12v9.5a2.09 2.09 0 0 1-.91-.21L4.5 17.48a2.003 2.003 0 0 1-1-1.73v-7.5a2.06 2.06 0 0 1 .27-1.01L12 12z"
+                                  opacity=".5" fill="currentColor"></path>
+                            <path class="uim-primary"
+                                  d="M20.5 8.25v7.5a2.003 2.003 0 0 1-1 1.73l-6.62 3.82c-.275.13-.576.198-.88.2V12l8.23-4.76c.175.308.268.656.27 1.01z"
+                                  fill="currentColor"></path>
+                        </svg>
+                        Models
+                    </a></li>
+                    <li><a class="flex items-center group px-2 py-0.5 hover:text-red-700 dark:hover:text-gray-400"
+                           href="https://huggingface.co/datasets">
+                        <svg class="mr-1.5 text-gray-400 group-hover:text-red-500" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img"
+                             width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 25 25">
+                            <ellipse cx="12.5" cy="5" fill="currentColor" fill-opacity="0.25" rx="7.5" ry="2"></ellipse>
+                            <path d="M12.5 15C16.6421 15 20 14.1046 20 13V20C20 21.1046 16.6421 22 12.5 22C8.35786 22 5 21.1046 5 20V13C5 14.1046 8.35786 15 12.5 15Z"
+                                  fill="currentColor" opacity="0.5"></path>
+                            <path d="M12.5 7C16.6421 7 20 6.10457 20 5V11.5C20 12.6046 16.6421 13.5 12.5 13.5C8.35786 13.5 5 12.6046 5 11.5V5C5 6.10457 8.35786 7 12.5 7Z"
+                                  fill="currentColor" opacity="0.5"></path>
+                            <path d="M5.23628 12C5.08204 12.1598 5 12.8273 5 13C5 14.1046 8.35786 15 12.5 15C16.6421 15 20 14.1046 20 13C20 12.8273 19.918 12.1598 19.7637 12C18.9311 12.8626 15.9947 13.5 12.5 13.5C9.0053 13.5 6.06886 12.8626 5.23628 12Z"
+                                  fill="currentColor"></path>
+                        </svg>
+                        Datasets
+                    </a></li>
+                    <li><a class="flex items-center group px-2 py-0.5 hover:text-gray-500 dark:hover:text-gray-400"
+                           href="https://huggingface.co/pricing">Pricing
+                    </a></li>
+                    <li class="b-r">
+                        <div class="v2-dropdown relative ">
+                            <button class="v2-dropdown-button cursor-pointer w-full
+			px-2 py-0.5 hover:text-gray-500 dark:hover:text-gray-400 flex items-center" type="button">
+                                <svg class="mr-1.5 text-gray-400 w-3" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                     role="img" width="1em" height="1em" viewBox="0 0 11 8"
+                                     preserveAspectRatio="xMidYMid meet" fill="currentColor">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M11 1.5H0V0.5H11V1.5ZM11 7.5H0V6.5H11V7.5ZM0 4.5H11V3.5H0V4.5Z"></path>
+                                </svg>
+                                Resources
+                            </button>
+
+
+                            <div class="v2-dropdown-menu hidden absolute mt-1 min-w-full w-full md:w-auto bg-white rounded-xl overflow-hidden shadow-lg z-10 border border-gray-100 right-0 top-full
+		">
+                                <ul class="min-w-full w-52">
+                                    <li>
+                                        <div class="col-span-full px-4 py-0.5 flex items-center justify-between font-semibold bg-gradient-to-r to-white dark:to-gray-925 whitespace-nowrap text-blue-800 from-blue-50 dark:text-blue-100 dark:from-blue-900">
+                                            Website
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://huggingface.co/metrics">
+                                                    <svg class="mr-1.5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                                         focusable="false" role="img" width="1em" height="1em"
+                                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                                        <path class="uim-quaternary"
+                                                              d="M6 23H2a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1z"
+                                                              opacity=".25" fill="currentColor"></path>
+                                                        <path class="uim-primary"
+                                                              d="M14 23h-4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1z"
+                                                              fill="currentColor"></path>
+                                                        <path class="uim-tertiary"
+                                                              d="M22 23h-4a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1z"
+                                                              opacity=".5" fill="currentColor"></path>
+                                                    </svg>
+                                                    Metrics</a></li>
+
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://huggingface.co/languages">
+                                                    <svg class="mr-1.5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                                         focusable="false" role="img" width="1em" height="1em"
+                                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                                        <path class="uim-primary"
+                                                              d="M17 13H7a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2z"
+                                                              fill="currentColor"></path>
+                                                        <path class="uim-tertiary"
+                                                              d="M12 2a10 10 0 0 0-7.743 16.33l-1.964 1.963A1 1 0 0 0 3 22h9a10 10 0 0 0 0-20zM9 7h6a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm6 10H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm2-4H7a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2z"
+                                                              opacity=".5" fill="currentColor"></path>
+                                                        <path class="uim-primary"
+                                                              d="M15 17H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm0-8H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z"
+                                                              fill="currentColor"></path>
+                                                    </svg>
+                                                    Languages</a></li>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://huggingface.co/organizations">
+                                                    <svg class="mr-1.5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                                         focusable="false" role="img" width="1em" height="1em"
+                                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                                        <path class="uim-tertiary"
+                                                              d="M12 18a3.5 3.5 0 1 1 3.5-3.5A3.504 3.504 0 0 1 12 18z"
+                                                              opacity=".5" fill="currentColor"></path>
+                                                        <path class="uim-primary"
+                                                              d="M14.64 16.772a3.452 3.452 0 0 1-5.28 0A4.988 4.988 0 0 0 7 21a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1a4.988 4.988 0 0 0-2.36-4.228z"
+                                                              fill="currentColor"></path>
+                                                        <path class="uim-tertiary"
+                                                              d="M21 12a.996.996 0 0 1-.664-.252L12 4.338l-8.336 7.41a1 1 0 0 1-1.328-1.496l9-8a.999.999 0 0 1 1.328 0l9 8A1 1 0 0 1 21 12z"
+                                                              opacity=".5" fill="currentColor"></path>
+                                                        <path class="uim-quaternary"
+                                                              d="M12 4.338l-8 7.111V21a1 1 0 0 0 1 1h3a1 1 0 0 1-1-1a4.988 4.988 0 0 1 2.36-4.228A3.469 3.469 0 0 1 8.5 14.5a3.5 3.5 0 0 1 7 0a3.469 3.469 0 0 1-.86 2.272A4.988 4.988 0 0 1 17 21a1 1 0 0 1-1 1h3a1 1 0 0 0 1-1v-9.551z"
+                                                              opacity=".25" fill="currentColor"></path>
+                                                    </svg>
+                                                    Organizations</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="col-span-full px-4 py-0.5 flex items-center justify-between font-semibold bg-gradient-to-r to-white dark:to-gray-925 whitespace-nowrap text-yellow-800 from-yellow-50 dark:text-yellow-100 dark:from-yellow-900">
+                                            Community
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://discuss.huggingface.co/" target="_blank">
+
+                                                    Forum</a></li>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://huggingface.co/blog">
+
+                                                    Blog</a></li>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://github.com/huggingface" target="_blank">
+
+                                                    GitHub</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="col-span-full px-4 py-0.5 flex items-center justify-between font-semibold bg-gradient-to-r to-white dark:to-gray-925 whitespace-nowrap text-green-800 from-green-50 dark:text-green-100 dark:from-green-900">
+                                            Documentation
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://huggingface.co/docs">
+
+                                                    Model Hub doc</a></li>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://api-inference.huggingface.co/docs/" target="_blank">
+
+                                                    Inference API doc</a></li>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://huggingface.co/transformers/">
+
+                                                    Transformers doc</a></li>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://huggingface.co/docs/tokenizers/python/latest/">
+
+                                                    Tokenizers doc</a></li>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://huggingface.co/docs/datasets/">
+
+                                                    Datasets doc</a></li>
+                                            <li>
+                                                <a class="v2-dropdown-entry flex items-center hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer px-3 py-1.5 whitespace-nowrap  hover:underline"
+                                                   href="https://huggingface.co/docs/accelerate/">
+
+                                                    Accelerate doc</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="flex items-center group mx-2 px-2 py-0.5 rounded-lg text-sm bg-gradient-to-l from-yellow-50 to-yellow-100 text-yellow-700  hover:from-yellow-100 dark:text-yellow-500 dark:hover:from-gray-900  dark:from-gray-925 dark:to-gray-900"
+                           href="https://angel.co/company/hugging-face/jobs" target="_blank">We're hiring!
+                        </a></li>
+                    <li>
+                        <hr class="mx-2 w-0.5 h-5 border-none bg-gray-100 dark:bg-gray-800">
+                    </li>
+                    <li><a class="px-2 py-0.5 block cursor-pointer hover:text-gray-500 dark:hover:text-gray-400"
+                           href="https://huggingface.co/login">Log In
+                    </a></li>
+                    <li><a class="ml-2 btn" href="https://huggingface.co/join">Sign Up </a></li>
+                </ul>
+            </nav>
+            <div id="v2-phone-nav-menu" class="hidden lg:hidden z-20 fixed bg-white top-16 inset-0 overflow-y-auto">
+                <nav aria-label="Main">
+                    <ul class="px-2 pb-4 space-y-4">
+                        <li class="space-y-2.5">
+                            <div class="-mx-2 flex items-center px-2 font-semibold
+        text-purple-800 bg-gradient-to-r from-purple-50 to-white h-7 dark:text-gray-200 dark:from-purple-900 dark:via-gray-925 dark:to-gray-925">
+                                Account
+                            </div>
+                            <ul class="grid gap-2.5 grid-cols-2 content-start">
+                                <li><a class="btn w-full v2-dropdown-entry" href="https://huggingface.co/login">Log
+                                    In </a></li>
+                                <li><a class="btn w-full v2-dropdown-entry" href="https://huggingface.co/join">Sign
+                                    Up </a></li>
+                            </ul>
+                        </li>
+                        <li class="space-y-2.5">
+                            <div class="-mx-2 flex items-center px-2 font-semibold text-blue-800
+              bg-gradient-to-r from-blue-50 to-white h-7 dark:text-gray-200 dark:from-blue-900 dark:via-gray-925 dark:to-gray-925">
+                                Website
+                            </div>
+                            <ul class="grid gap-2.5 grid-cols-2 content-start">
+                                <li><a href="https://huggingface.co/models" class="btn w-full v2-dropdown-entry">
+                                    <svg class="text-gray-400 mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                         role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                         viewBox="0 0 24 24">
+                                        <path class="uim-quaternary"
+                                              d="M20.23 7.24L12 12L3.77 7.24a1.98 1.98 0 0 1 .7-.71L11 2.76c.62-.35 1.38-.35 2 0l6.53 3.77c.29.173.531.418.7.71z"
+                                              opacity=".25" fill="currentColor"></path>
+                                        <path class="uim-tertiary"
+                                              d="M12 12v9.5a2.09 2.09 0 0 1-.91-.21L4.5 17.48a2.003 2.003 0 0 1-1-1.73v-7.5a2.06 2.06 0 0 1 .27-1.01L12 12z"
+                                              opacity=".5" fill="currentColor"></path>
+                                        <path class="uim-primary"
+                                              d="M20.5 8.25v7.5a2.003 2.003 0 0 1-1 1.73l-6.62 3.82c-.275.13-.576.198-.88.2V12l8.23-4.76c.175.308.268.656.27 1.01z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                    Models
+                                </a></li>
+                                <li><a href="https://huggingface.co/datasets" class="btn w-full v2-dropdown-entry">
+                                    <svg class="text-gray-400 mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                         role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                         viewBox="0 0 25 25">
+                                        <ellipse cx="12.5" cy="5" fill="currentColor" fill-opacity="0.25" rx="7.5"
+                                                 ry="2"></ellipse>
+                                        <path d="M12.5 15C16.6421 15 20 14.1046 20 13V20C20 21.1046 16.6421 22 12.5 22C8.35786 22 5 21.1046 5 20V13C5 14.1046 8.35786 15 12.5 15Z"
+                                              fill="currentColor" opacity="0.5"></path>
+                                        <path d="M12.5 7C16.6421 7 20 6.10457 20 5V11.5C20 12.6046 16.6421 13.5 12.5 13.5C8.35786 13.5 5 12.6046 5 11.5V5C5 6.10457 8.35786 7 12.5 7Z"
+                                              fill="currentColor" opacity="0.5"></path>
+                                        <path d="M5.23628 12C5.08204 12.1598 5 12.8273 5 13C5 14.1046 8.35786 15 12.5 15C16.6421 15 20 14.1046 20 13C20 12.8273 19.918 12.1598 19.7637 12C18.9311 12.8626 15.9947 13.5 12.5 13.5C9.0053 13.5 6.06886 12.8626 5.23628 12Z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                    Datasets
+                                </a></li>
+                                <li><a href="https://huggingface.co/metrics" class="btn w-full v2-dropdown-entry">
+                                    <svg class="text-gray-400 mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                         role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                         viewBox="0 0 24 24">
+                                        <path class="uim-quaternary"
+                                              d="M6 23H2a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1z"
+                                              opacity=".25" fill="currentColor"></path>
+                                        <path class="uim-primary"
+                                              d="M14 23h-4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1z"
+                                              fill="currentColor"></path>
+                                        <path class="uim-tertiary"
+                                              d="M22 23h-4a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1z"
+                                              opacity=".5" fill="currentColor"></path>
+                                    </svg>
+                                    Metrics
+                                </a></li>
+                                <li><a href="https://huggingface.co/languages" class="btn w-full v2-dropdown-entry">
+                                    <svg class="text-gray-400 mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                         role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                         viewBox="0 0 24 24">
+                                        <path class="uim-primary" d="M17 13H7a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2z"
+                                              fill="currentColor"></path>
+                                        <path class="uim-tertiary"
+                                              d="M12 2a10 10 0 0 0-7.743 16.33l-1.964 1.963A1 1 0 0 0 3 22h9a10 10 0 0 0 0-20zM9 7h6a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm6 10H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm2-4H7a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2z"
+                                              opacity=".5" fill="currentColor"></path>
+                                        <path class="uim-primary"
+                                              d="M15 17H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm0-8H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                    Languages
+                                </a></li>
+                                <li><a href="https://huggingface.co/organizations" class="btn w-full v2-dropdown-entry">
+                                    <svg class="text-gray-400 mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                         role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                         viewBox="0 0 24 24">
+                                        <path class="uim-tertiary"
+                                              d="M12 18a3.5 3.5 0 1 1 3.5-3.5A3.504 3.504 0 0 1 12 18z" opacity=".5"
+                                              fill="currentColor"></path>
+                                        <path class="uim-primary"
+                                              d="M14.64 16.772a3.452 3.452 0 0 1-5.28 0A4.988 4.988 0 0 0 7 21a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1a4.988 4.988 0 0 0-2.36-4.228z"
+                                              fill="currentColor"></path>
+                                        <path class="uim-tertiary"
+                                              d="M21 12a.996.996 0 0 1-.664-.252L12 4.338l-8.336 7.41a1 1 0 0 1-1.328-1.496l9-8a.999.999 0 0 1 1.328 0l9 8A1 1 0 0 1 21 12z"
+                                              opacity=".5" fill="currentColor"></path>
+                                        <path class="uim-quaternary"
+                                              d="M12 4.338l-8 7.111V21a1 1 0 0 0 1 1h3a1 1 0 0 1-1-1a4.988 4.988 0 0 1 2.36-4.228A3.469 3.469 0 0 1 8.5 14.5a3.5 3.5 0 0 1 7 0a3.469 3.469 0 0 1-.86 2.272A4.988 4.988 0 0 1 17 21a1 1 0 0 1-1 1h3a1 1 0 0 0 1-1v-9.551z"
+                                              opacity=".25" fill="currentColor"></path>
+                                    </svg>
+                                    Organizations
+                                </a></li>
+                                <li><a href="https://huggingface.co/pricing" class="btn w-full v2-dropdown-entry">Pricing
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="space-y-2.5">
+                            <div class="-mx-2 flex items-center px-2 font-semibold
+              text-yellow-800 bg-gradient-to-r from-yellow-50 to-white h-7 dark:text-gray-200 dark:from-yellow-900 dark:via-gray-925 dark:to-gray-925">
+                                Community
+                            </div>
+                            <ul class="grid gap-2.5 grid-cols-2 content-start">
+                                <li><a href="https://discuss.huggingface.co/" class="btn w-full v2-dropdown-entry">Forum
+                                </a></li>
+                                <li><a href="https://huggingface.co/blog" class="btn w-full v2-dropdown-entry">Blog </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="space-y-2.5">
+                            <div class="-mx-2 flex items-center px-2 font-semibold
+              text-green-800 bg-gradient-to-r from-green-50 to-white h-7 dark:text-gray-200 dark:from-green-900 dark:via-gray-925 dark:to-gray-925">
+                                Documentation
+                            </div>
+                            <ul class="grid gap-2.5 grid-cols-2 content-start">
+                                <li><a href="https://huggingface.co/docs" class="btn w-full v2-dropdown-entry">Model Hub
+                                    doc
+                                </a></li>
+                                <li><a href="https://api-inference.huggingface.co/docs/"
+                                       class="btn w-full v2-dropdown-entry">Inference API doc
+                                </a></li>
+                                <li><a href="https://huggingface.co/transformers/" class="btn w-full v2-dropdown-entry">Transformers
+                                    doc
+                                </a></li>
+                                <li><a href="https://huggingface.co/docs/tokenizers/python/latest/"
+                                       class="btn w-full v2-dropdown-entry">Tokenizers doc
+                                </a></li>
+                                <li><a href="https://huggingface.co/docs/datasets/"
+                                       class="btn w-full v2-dropdown-entry">Datasets doc
+                                </a></li>
+                                <li><a href="https://huggingface.co/docs/accelerate/"
+                                       class="btn w-full v2-dropdown-entry">Accelerate doc
+                                </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="flex flex-col flex-1 ">
+        <header class="bg-gradient-to-t from-gray-50-to-white via-white dark:via-gray-950 pt-10">
+            <div class="container relative">
+                <h1 class="flex items-center flex-wrap md:text-xl mb-3">
+                    <div><a class="font-mono font-semibold" href="https://huggingface.co/distilbert-base-uncased">distilbert-base-uncased</a>
+                        <button class="v2-to-clipboard relative mx-1 text-sm text-gray-400 hover:text-gray-500 focus:text-green-500  cursor-pointer focus:outline-none"
+                                title="Copy model name to clipboard" type="button">
+                            <svg class="v2-to-clipboard-button" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                 fill="currentColor" focusable="false" role="img" width="1em" height="1em"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                                <path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"
+                                      transform="translate(0)"></path>
+                                <path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z" transform="translate(0)"></path>
+                                <rect fill="none" width="32" height="32"></rect>
+                            </svg>
+                            <div class="
+		absolute pointer-events-none transition-opacity bg-black text-white py-1 px-2 leading-tight rounded font-normal shadow 
+		left-1/2 top-full transform -translate-x-1/2 translate-y-2
+		v2-to-clipboard-success opacity-0
+	">
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-black border-4 border-t-0"
+                                     style="
+				border-left-color: transparent;
+				border-right-color: transparent;
+			"></div>
+                                Copied
+                            </div>
+                            <div class="v2-to-clipboard-content hidden">distilbert-base-uncased</div>
+                        </button>
+                    </div>
+                </h1>
+                <div class="flex flex-wrap mb-5"><a class="tag tag-white "
+                                                    href="https://huggingface.co/models?pipeline_tag=fill-mask"
+                                                    tag-id="fill-mask">
+                    <div class="tag-ico tag-ico-red">
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             aria-hidden="true" fill="currentColor" focusable="false" role="img" width="1em"
+                             height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 18 19">
+                            <path d="M12.3625 13.85H10.1875V12.7625H12.3625V10.5875H13.45V12.7625C13.4497 13.0508 13.335 13.3272 13.1312 13.5311C12.9273 13.735 12.6508 13.8497 12.3625 13.85V13.85Z"></path>
+                            <path d="M5.8375 8.41246H4.75V6.23746C4.75029 5.94913 4.86496 5.67269 5.06884 5.4688C5.27272 5.26492 5.54917 5.15025 5.8375 5.14996H8.0125V6.23746H5.8375V8.41246Z"></path>
+                            <path d="M15.625 5.14998H13.45V2.97498C13.4497 2.68665 13.335 2.4102 13.1312 2.20632C12.9273 2.00244 12.6508 1.88777 12.3625 1.88748H2.575C2.28666 1.88777 2.01022 2.00244 1.80633 2.20632C1.60245 2.4102 1.48778 2.68665 1.4875 2.97498V12.7625C1.48778 13.0508 1.60245 13.3273 1.80633 13.5311C2.01022 13.735 2.28666 13.8497 2.575 13.85H4.75V16.025C4.75028 16.3133 4.86495 16.5898 5.06883 16.7936C5.27272 16.9975 5.54916 17.1122 5.8375 17.1125H15.625C15.9133 17.1122 16.1898 16.9975 16.3937 16.7936C16.5975 16.5898 16.7122 16.3133 16.7125 16.025V6.23748C16.7122 5.94915 16.5975 5.6727 16.3937 5.46882C16.1898 5.26494 15.9133 5.15027 15.625 5.14998V5.14998ZM15.625 16.025H5.8375V13.85H8.0125V12.7625H5.8375V10.5875H4.75V12.7625H2.575V2.97498H12.3625V5.14998H10.1875V6.23748H12.3625V8.41248H13.45V6.23748H15.625V16.025Z"></path>
+                        </svg>
+                    </div>
+                    <span>Fill-Mask</span></a><a class="tag tag-red "
+                                                 href="https://huggingface.co/models?filter=pytorch" tag-id="pytorch">
+                    <svg class="inline-block ml-2 text-sm" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img"
+                         width="0.83em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 310">
+                        <path d="M218.281 90.106c50.292 50.292 50.292 130.969 0 181.61c-49.244 50.292-130.27 50.292-180.562 0s-50.292-131.318 0-181.61L127.825 0v45.053l-8.382 8.382l-59.721 59.722c-37.72 37.02-37.72 97.79 0 135.509c37.02 37.719 97.79 37.719 135.509 0c37.719-37.02 37.719-97.79 0-135.51l23.05-23.05zm-45.053-5.588c-9.259 0-16.764-7.505-16.764-16.764c0-9.258 7.505-16.764 16.764-16.764c9.258 0 16.764 7.506 16.764 16.764c0 9.259-7.506 16.764-16.764 16.764z"
+                              fill="#EE4C2C"></path>
+                    </svg>
+                    <span>PyTorch</span></a><a class="tag tag-red " href="https://huggingface.co/models?filter=tf"
+                                               tag-id="tf">
+                    <svg class="inline-block ml-2 text-sm" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img"
+                         width="0.94em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 274">
+                        <path d="M145.726 42.065v42.07l72.861 42.07v-42.07l-72.86-42.07zM0 84.135v42.07l36.43 21.03V105.17L0 84.135zm109.291 21.035l-36.43 21.034v126.2l36.43 21.035v-84.135l36.435 21.035v-42.07l-36.435-21.034V105.17z"
+                              fill="#E55B2D"></path>
+                        <path d="M145.726 42.065L36.43 105.17v42.065l72.861-42.065v42.065l36.435-21.03v-84.14zM255.022 63.1l-36.435 21.035v42.07l36.435-21.035V63.1zm-72.865 84.135l-36.43 21.035v42.07l36.43-21.036v-42.07zm-36.43 63.104l-36.436-21.035v84.135l36.435-21.035V210.34z"
+                              fill="#ED8E24"></path>
+                        <path d="M145.726 0L0 84.135l36.43 21.035l109.296-63.105l72.861 42.07L255.022 63.1L145.726 0zm0 126.204l-36.435 21.03l36.435 21.036l36.43-21.035l-36.43-21.03z"
+                              fill="#F8BF3C"></path>
+                    </svg>
+                    <span>TensorFlow</span></a><a class="tag tag-red " href="https://huggingface.co/models?filter=rust"
+                                                  tag-id="rust">
+                    <span>Rust</span></a><a class="tag tag-indigo "
+                                            href="https://huggingface.co/models?filter=dataset:bookcorpus"
+                                            tag-id="dataset:bookcorpus">
+                    <span>bookcorpus</span></a><a class="tag tag-indigo "
+                                                  href="https://huggingface.co/models?filter=dataset:wikipedia"
+                                                  tag-id="dataset:wikipedia">
+                    <span>wikipedia</span></a><a class="tag tag-green " href="https://huggingface.co/models?filter=en"
+                                                 tag-id="en">
+                    <span>en</span></a><a class="tag tag-purple "
+                                          href="https://huggingface.co/models?filter=arxiv:1910.01108"
+                                          tag-id="arxiv:1910.01108">
+                    <span>arxiv:1910.01108</span></a><a class="tag tag-blue "
+                                                        href="https://huggingface.co/models?filter=license:apache-2.0"
+                                                        tag-id="license:apache-2.0">
+                    <span>apache-2.0</span></a><a class="tag tag-purple "
+                                                  href="https://huggingface.co/models?filter=distilbert"
+                                                  tag-id="distilbert">
+                    <span>distilbert</span></a><a class="tag tag-purple "
+                                                  href="https://huggingface.co/models?filter=masked-lm"
+                                                  tag-id="masked-lm">
+                    <span>masked-lm</span></a><a class="tag tag-purple "
+                                                 href="https://huggingface.co/models?filter=exbert" tag-id="exbert">
+                    <span>exbert</span></a></div>
+                <div class="border-b border-gray-100">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center h-12 -mb-px overflow-x-auto overflow-y-hidden"><a
+                                class="tab-alternate active" href="https://huggingface.co/distilbert-base-uncased">
+                            <svg class="mr-1.5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                 role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                 viewBox="0 0 24 24">
+                                <path class="uim-quaternary"
+                                      d="M20.23 7.24L12 12L3.77 7.24a1.98 1.98 0 0 1 .7-.71L11 2.76c.62-.35 1.38-.35 2 0l6.53 3.77c.29.173.531.418.7.71z"
+                                      opacity=".25" fill="currentColor"></path>
+                                <path class="uim-tertiary"
+                                      d="M12 12v9.5a2.09 2.09 0 0 1-.91-.21L4.5 17.48a2.003 2.003 0 0 1-1-1.73v-7.5a2.06 2.06 0 0 1 .27-1.01L12 12z"
+                                      opacity=".5" fill="currentColor"></path>
+                                <path class="uim-primary"
+                                      d="M20.5 8.25v7.5a2.003 2.003 0 0 1-1 1.73l-6.62 3.82c-.275.13-.576.198-.88.2V12l8.23-4.76c.175.308.268.656.27 1.01z"
+                                      fill="currentColor"></path>
+                            </svg>
+                            Model card
+                        </a>
+                            <a class="tab-alternate " href="https://huggingface.co/distilbert-base-uncased/tree/main">
+                                <svg class="mr-1.5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                     role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                     viewBox="0 0 24 24">
+                                    <path class="uim-tertiary"
+                                          d="M21 19h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0-4h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0-8h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0 4h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z"
+                                          opacity=".5" fill="currentColor"></path>
+                                    <path class="uim-primary"
+                                          d="M9 19a1 1 0 0 1-1-1V6a1 1 0 0 1 2 0v12a1 1 0 0 1-1 1zm-6-4.333a1 1 0 0 1-.64-1.769L3.438 12l-1.078-.898a1 1 0 0 1 1.28-1.538l2 1.667a1 1 0 0 1 0 1.538l-2 1.667a.999.999 0 0 1-.64.231z"
+                                          fill="currentColor"></path>
+                                </svg>
+                                Files and versions
+                            </a>
+                        </div>
+                        <div class="relative hidden space-x-1.5 lg:flex">
+                            <div class="v2-modal ">
+                                <button class="v2-modal-button cursor-pointer w-full
+		btn 
+		text-sm" type="button">
+
+                                    <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                         role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                         viewBox="0 0 32 32">
+                                        <path d="M8 9H4a2 2 0 0 0-2 2v12h2v-5h4v5h2V11a2 2 0 0 0-2-2zm-4 7v-5h4v5z"
+                                              fill="currentColor"></path>
+                                        <path d="M22 11h3v10h-3v2h8v-2h-3V11h3V9h-8v2z" fill="currentColor"></path>
+                                        <path d="M14 23h-2V9h6a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-4zm0-7h4v-5h-4z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                    <span><span class="hidden xl:inline">Use Accelerated </span>Inference
+			</span>
+                                </button>
+
+
+                                <div class="v2-modal-body fixed inset-0 flex hidden w-screen h-screen overflow-x-hidden overflow-y-auto bg-black bg-opacity-40 dark:bg-opacity-50 z-40 p-2 sm:p-4 xl:p-8">
+                                    <div class="v2-modal-content m-auto max-w-full bg-white rounded-lg ">
+
+
+                                        <div class="v2-token-select v2-to-clipboard">
+                                            <div class="col-span-full px-4 py-0.5 flex items-center justify-between font-semibold bg-gradient-to-r to-white dark:to-gray-925 whitespace-nowrap from-gray-50 dark:from-gray-900 border-b border-gray-200 h-11 flex-none
+	
+	rounded-t-lg"><h3>How to serve this model with the Accelerated Inference
+                                                API
+                                            </h3>
+
+                                                <button class="v2-to-clipboard-button text-sm underline flex items-center cursor-pointer text-gray-500">
+                                                    <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                                         aria-hidden="true" fill="currentColor" focusable="false"
+                                                         role="img" width="1em" height="1em"
+                                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                                                        <path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"
+                                                              transform="translate(0)"></path>
+                                                        <path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"
+                                                              transform="translate(0)"></path>
+                                                        <rect fill="none" width="32" height="32"></rect>
+                                                    </svg>
+                                                    Copy to clipboard
+                                                </button>
+                                            </div>
+                                            <div class="p-4 pb-0">
+                                                <div class="alert">Try the Inference API for free, and
+                                                    <a class="underline" href="https://huggingface.co/pricing">get an
+                                                        organization plan</a>
+                                                    to use it in your apps.
+                                                </div>
+                                            </div>
+                                            <div class="overflow-x-auto"><pre
+                                                    class="v2-token-select-code v2-to-clipboard-content text-sm p-4 text-gray-700"><span
+                                                    class="hljs-keyword">import</span> json
+<span class="hljs-keyword">import</span> requests
+
+API_URL = <span class="hljs-string">"https://api-inference.huggingface.co/models/distilbert-base-uncased"</span>
+headers = {<span class="hljs-string">"Authorization"</span>: <span class="hljs-string">f"Bearer <span
+                                                        class="hljs-subst">{API_TOKEN}</span>"</span>}
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">query</span>(<span
+        class="hljs-params">payload</span>):</span>
+	data = json.dumps(payload)
+	response = requests.request(<span class="hljs-string">"POST"</span>, API_URL, headers=headers, data=data)
+	<span class="hljs-keyword">return</span> json.loads(response.content.decode(<span class="hljs-string">"utf-8"</span>))
+data = query({<span class="hljs-string">"inputs"</span>: <span class="hljs-string">"The answer to the universe is [MASK]."</span>})</pre>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="col-span-full px-4 py-0.5 flex items-center justify-between font-semibold bg-gradient-to-r to-white dark:to-gray-925 whitespace-nowrap from-gray-50 dark:from-gray-900 border-b border-gray-200 h-11 flex-none
+	
+	">Quick Links
+                                            </div>
+                                            <ul class="p-4 space-y-2 underline">
+                                                <li>
+                                                    <a href="https://api-inference.huggingface.co/docs/python/html/index.html"
+                                                       target="_blank">Inference API Documentation
+                                                    </a></li>
+                                                <li>
+                                                    <a href="https://api-inference.huggingface.co/docs/python/html/quicktour.html"
+                                                       target="_blank">How to get started
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v2-modal ">
+                                <button class="v2-modal-button cursor-pointer w-full
+		btn 
+		text-sm" type="button">
+
+                                    <svg class="mr-1.5 text-xs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                         focusable="false" role="img" width="1em" height="1em" viewBox="0 0 60 60"
+                                         fill="currentColor">
+                                        <path d="M15.0309 55.8163C11.134 53.523 7.76289 51.4777 7.54639 51.2917C7.20619 51.0128 7.1134 49.9282 7.1134 46.8291V42.7384L3.80412 40.1352C1.94845 38.7407 0.371134 37.4081 0.247423 37.2221C0.123711 37.0672 0 33.7822 0 29.9704V23.0286L0.989691 22.1609C1.54639 21.696 3.12371 20.3944 4.48454 19.3407L6.95876 17.3574L7.1134 13.1427C7.20619 10.8184 7.3299 8.86602 7.42268 8.77305C8.10309 8.18423 20.4433 0.312702 21.0619 0.0957696C21.7732 -0.183143 22.299 0.033789 25.732 2.29608C27.8351 3.69064 29.7835 4.83728 30 4.83728C30.2165 4.83728 32.1649 3.69064 34.268 2.29608C37.701 0.033789 38.2268 -0.183143 38.9381 0.0957696C39.5567 0.312702 51.8969 8.18423 52.5773 8.77305C52.6701 8.86602 52.7938 10.8184 52.8866 13.1427L53.0412 17.3574L55.5155 19.3407C56.8763 20.3944 58.4536 21.696 59.0103 22.1609L60 23.0286V29.9704C60 33.7822 59.8763 37.0672 59.7526 37.2221C59.6289 37.4081 58.0515 38.7407 56.2268 40.1352L52.8866 42.7384V46.8601V50.9818L52.0515 51.5706C49.5464 53.3061 37.6701 60 37.0515 60C36.6495 60 34.9175 59.1633 33.1546 58.1406L30 56.3122L26.8454 58.1406C25.0825 59.1633 23.3196 60 22.8866 60C22.4536 59.969 18.9278 58.1096 15.0309 55.8163ZM25.6701 54.5457L28.1443 53.1202V47.5729V42.0566L26.5361 43.0173C22.2062 45.5585 16.5155 48.5336 15.9278 48.5336C14.9691 48.5336 14.1649 47.5109 14.2887 46.4572C14.3814 45.7135 14.8144 45.3416 17.567 43.7921L20.7216 41.9636V38.7407V35.5177L18.433 34.371L16.1134 33.2244L13.4845 34.9908C9.92784 37.3461 8.35052 37.3461 8.35052 34.9908C8.35052 34.0301 8.56701 33.8442 11.2887 32.0468L14.2268 30.0944L14.1649 27.1813L14.0722 24.2372L11.5052 22.4088C9.7732 21.1692 8.81443 20.6733 8.56701 20.8903C8.35052 21.0452 7.17526 21.9749 5.96907 22.9356C3.71134 24.7331 3.71134 24.7331 3.71134 26.2516C3.71134 27.0883 3.80412 27.7701 3.89691 27.7701C4.02062 27.7701 5.10309 27.1813 6.30928 26.4995C7.51546 25.7867 8.90722 25.1979 9.40206 25.1979C10.9485 25.1669 11.7526 27.1503 10.6082 28.142C10.299 28.4209 8.62887 29.4436 6.89691 30.4353L3.71134 32.2327V33.8442V35.4247L6.86598 37.8419L9.98969 40.2902L11.567 39.4224C16.3608 36.8193 16.1134 36.9122 16.9794 37.4081C17.4124 37.656 17.8144 38.1209 17.8763 38.4308C18.1546 39.7943 17.6598 40.3212 14.4124 42.1186C12.6186 43.1103 11.0103 44.133 10.8247 44.3499C10.6392 44.5978 10.5155 45.6515 10.5773 46.8601L10.6701 48.9365L13.1443 50.424C14.5052 51.2607 15.7732 51.9115 15.9897 51.9425C16.1753 51.9425 17.8144 51.1058 19.6082 50.0521C23.2268 47.9758 24.2474 47.8208 25.0206 49.1844C25.4227 49.9282 25.4227 50.0831 24.9588 50.7959C24.6804 51.2297 23.3814 52.1595 22.0825 52.8722L19.732 54.2048L21.0619 55.0725C21.8041 55.5374 22.6082 55.9403 22.8247 55.9403C23.0412 55.9713 24.3402 55.3205 25.6701 54.5457ZM43.3299 52.4694L49.3299 48.9675L49.4845 44.8148L49.6392 40.6621L51.3402 39.2985C52.268 38.5237 53.0722 37.811 53.1031 37.718C53.2887 37.2841 49.701 35.5177 48.6804 35.5177C47.1959 35.5177 46.4227 35.0528 45.9278 33.8752C45.0619 31.7678 46.3299 29.9394 48.7113 29.9394C50.0103 29.9394 51 30.6212 51.433 31.8298C51.5258 32.1087 52.6701 32.9765 53.9381 33.7822L56.2887 35.2078V29.9394V24.7021L52.8866 22.0369L49.4845 19.3407V17.6673V15.9938H45.4021C42.433 16.0248 41.0722 16.1487 40.5155 16.4586C37.9794 17.9152 35.1031 15.5289 36.1856 12.8638C36.9278 11.1283 39.433 10.5395 40.8247 11.8101C41.6289 12.5229 49.268 12.3369 49.4227 11.6242C49.4845 11.2833 47.8144 10.0437 44.0412 7.59542C41.0103 5.64303 38.4433 4.09352 38.3196 4.12451C38.1959 4.18649 36.6804 5.1162 34.9794 6.26284L31.8557 8.27721V15.0021V21.727L34.1443 23.0596C35.7526 23.9893 36.7423 24.3612 37.6392 24.3612C39.3093 24.3612 40.3608 25.4458 40.3608 27.2123C40.3608 28.7928 39.1856 29.9394 37.5464 29.9394C36.1237 29.9394 35.4742 29.5675 34.732 28.2969C34.3299 27.6151 33.2165 26.7474 31.3299 25.6628C29.7835 24.764 28.4227 23.8343 28.3299 23.5554C28.2371 23.2765 28.1443 19.7436 28.1443 15.6839V8.27721L24.866 6.13888L21.5567 3.96956L19.7629 5.1162L17.9381 6.23185V11.0353C17.9381 16.3967 17.6907 17.2334 16.1443 17.2334C14.5052 17.2334 14.3814 16.9545 14.2268 12.7398L14.0722 8.86602L12.3093 9.98167L10.5155 11.0973V14.1344V17.2024L13.2062 19.0618C14.6598 20.1155 16.0206 20.9522 16.2062 20.9522C16.3918 20.9212 17.5979 20.3324 18.866 19.6197L21.1856 18.2871L21.3402 14.2893C21.4948 10.3536 21.4948 10.2606 22.299 9.82672C23.0412 9.42385 23.1959 9.42385 23.9381 9.8887L24.7423 10.4155V15.343C24.7423 21.0142 25.0825 20.3324 20.9072 22.6877L18.0928 24.2682L18 27.0883L17.9072 29.9084L20.4742 31.21C24.433 33.1624 24.433 33.1934 24.433 36.8193V39.8873L26.2887 38.8646L28.1443 37.8419V35.1768V32.5116L25.9794 31.0551C24.0309 29.7535 23.8144 29.5365 23.8144 28.6068C23.8144 26.3136 25.4227 26.2516 28.701 28.4209C30 29.2886 31.268 30.2493 31.4845 30.4972C31.7629 30.8381 31.8557 32.6046 31.8557 36.8193V42.6454H34.268C35.8763 42.6144 36.8351 42.4905 37.2371 42.1806C37.5773 41.9327 38.3505 41.7157 38.9691 41.7157C42.4021 41.7157 42.8969 46.7362 39.5258 47.4489C38.9381 47.6039 38.2577 47.4489 37.3918 47.0151C36.4948 46.5502 35.5979 46.3643 34.0206 46.3643H31.8557V49.7422V53.1202L34.268 54.5457C35.567 55.3205 36.8041 55.9403 36.9897 55.9713C37.1753 55.9713 40.0515 54.3908 43.3299 52.4694Z"></path>
+                                    </svg>
+                                    <span><span class="hidden xl:inline">Use in </span>SageMaker
+		</span>
+                                </button>
+
+
+                                <div class="v2-modal-body fixed inset-0 flex hidden w-screen h-screen overflow-x-hidden overflow-y-auto bg-black bg-opacity-40 dark:bg-opacity-50 z-40 p-2 sm:p-4 xl:p-8">
+                                    <div class="v2-modal-content m-auto max-w-full bg-white rounded-lg flex flex-col max-h-full">
+
+
+                                        <div class="col-span-full px-4 py-0.5 flex items-center justify-between font-semibold bg-gradient-to-r to-white dark:to-gray-925 whitespace-nowrap from-gray-50 dark:from-gray-900 border-b border-gray-200 h-11 flex-none
+	
+	rounded-t-lg">How to train this model using Amazon SageMaker
+                                        </div>
+                                        <div class="v2-sage-maker flex flex-col flex-1 overflow-hidden "
+                                             data-model-id="distilbert-base-uncased">
+                                            <form class="v2-sage-maker-form flex flex-wrap flex-none"><label
+                                                    class="flex flex-col flex-1 w-96 p-4">
+                                                <div class="text-lg font-semibold">Task</div>
+                                                <p class="text-sm text-gray-700 mb-2">Select the task you want to
+                                                    fine-tune the model on
+                                                </p>
+                                                <select class="form-input !mt-auto" name="sage-task" required="">
+                                                    <option disabled="" selected="" value="">Please select a task
+                                                    </option>
+                                                    <option value="causal-language-modeling">Causal Language Modeling
+                                                    </option>
+                                                    <option value="masked-language-modeling">Masked Language Modeling
+                                                    </option>
+                                                    <option value="question-answering">Question Answering</option>
+                                                    <option value="summarization">Summarization</option>
+                                                    <option value="text-classification">Text Classification</option>
+                                                    <option value="token-classification">Token Classification</option>
+                                                    <option value="translation">Translation</option>
+                                                </select></label>
+                                                <label class="flex flex-col flex-1 w-96 p-4">
+                                                    <div class="text-lg font-semibold">Configuration</div>
+                                                    <p class="text-sm text-gray-700 mb-2">Launch training from a local
+                                                        machine or inside AWS ?
+                                                    </p>
+                                                    <select class="form-input !mt-auto" name="sage-config" required="">
+                                                        <option disabled="" selected="" value="">Please select a
+                                                            config
+                                                        </option>
+                                                        <option value="aws">AWS</option>
+                                                        <option value="local">Local Machine</option>
+                                                    </select></label></form>
+                                            <div class="v2-to-clipboard relative overflow-hidden flex flex-col flex-1">
+
+                                                <button class="v2-to-clipboard-button btn absolute top-4 right-4 text-sm shadow-sm"
+                                                        type="button">
+                                                    <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                                         focusable="false" role="img" width="1em" height="1em"
+                                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                                                        <path d="M25.7 9.3l-7-7A.908.908 0 0 0 18 2H8a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h16a2.006 2.006 0 0 0 2-2V10a.908.908 0 0 0-.3-.7zM18 4.4l5.6 5.6H18zM24 28H8V4h8v6a2.006 2.006 0 0 0 2 2h6z"
+                                                              fill="currentColor"></path>
+                                                    </svg>
+                                                    Copy to clipboard
+                                                </button>
+                                                <pre class="v2-sage-maker-code v2-to-clipboard-content transition-all border-t border-t-0 p-4 p-0 max-h-0 text-sm text-gray-700 overflow-auto"></pre>
+                                            </div>
+                                        </div>
+                                        <div class="col-span-full px-4 py-0.5 flex items-center justify-between font-semibold bg-gradient-to-r to-white dark:to-gray-925 whitespace-nowrap from-gray-50 dark:from-gray-900 border-b border-gray-200 h-11 flex-none
+	
+	">Quick Links
+                                        </div>
+                                        <ul class="p-4 space-y-2 underline flex-none">
+                                            <li><a href="https://huggingface.co/transformers/sagemaker.html"
+                                                   target="_blank">Transformers: Run training on Amazon SageMaker
+                                            </a></li>
+                                            <li><a href="https://github.com/huggingface/notebooks/tree/master/sagemaker"
+                                                   target="_blank">Examples
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v2-modal ">
+                                <button class="v2-modal-button cursor-pointer w-full
+		btn 
+		text-sm" type="button">
+
+                                    <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                         role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                         viewBox="0 0 32 32" style="transform: rotate(360deg);">
+                                        <path d="M31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7z"
+                                              fill="currentColor"></path>
+                                        <path d="M1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7z"
+                                              fill="currentColor"></path>
+                                        <path d="M12.419 25.484L17.639 6l1.932.518L14.35 26z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                    <span><span class="hidden xl:inline">Use in </span>Transformers</span>
+                                </button>
+
+
+                                <div class="v2-modal-body fixed inset-0 flex hidden w-screen h-screen overflow-x-hidden overflow-y-auto bg-black bg-opacity-40 dark:bg-opacity-50 z-40 p-2 sm:p-4 xl:p-8">
+                                    <div class="v2-modal-content m-auto max-w-full bg-white rounded-lg ">
+
+
+                                        <div class="v2-to-clipboard">
+                                            <div class="col-span-full px-4 py-0.5 flex items-center justify-between font-semibold bg-gradient-to-r to-white dark:to-gray-925 whitespace-nowrap from-gray-50 dark:from-gray-900 border-b border-gray-200 h-11 flex-none
+	
+	rounded-t-lg"><h3 class="mr-6 md:mr-36">How to use from the
+                                                <a target="_blank" href="https://github.com/huggingface/transformers"
+                                                   class="underline">🤗/transformers</a>
+                                                library
+                                            </h3>
+                                                <button class="v2-to-clipboard-button text-sm underline flex items-center cursor-pointer text-gray-500">
+                                                    <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                                         aria-hidden="true" fill="currentColor" focusable="false"
+                                                         role="img" width="1em" height="1em"
+                                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                                                        <path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"
+                                                              transform="translate(0)"></path>
+                                                        <path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"
+                                                              transform="translate(0)"></path>
+                                                        <rect fill="none" width="32" height="32"></rect>
+                                                    </svg>
+                                                    Copy to clipboard
+                                                </button>
+                                            </div>
+                                            <pre class="v2-to-clipboard-content text-sm p-4 text-gray-700"><span
+                                                    class="hljs-keyword">from</span> transformers <span
+                                                    class="hljs-keyword">import</span> AutoTokenizer, AutoModelForMaskedLM
+  
+tokenizer = AutoTokenizer.from_pretrained(<span class="hljs-string">"distilbert-base-uncased"</span>)
+
+model = AutoModelForMaskedLM.from_pretrained(<span class="hljs-string">"distilbert-base-uncased"</span>)</pre>
+                                        </div>
+                                        <div class="v2-to-clipboard">
+                                            <div class="col-span-full px-4 py-0.5 flex items-center justify-between font-semibold bg-gradient-to-r to-white dark:to-gray-925 whitespace-nowrap from-gray-50 dark:from-gray-900 border-b border-gray-200 h-11 flex-none
+	
+	"><h3 class="font-semibold mr-6 md:mr-36">Or just clone the model repo
+                                            </h3>
+                                                <button class="v2-to-clipboard-button text-sm underline flex items-center cursor-pointer text-gray-500">
+                                                    <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg"
+                                                         aria-hidden="true" fill="currentColor" focusable="false"
+                                                         role="img" width="1em" height="1em"
+                                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                                                        <path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"
+                                                              transform="translate(0)"></path>
+                                                        <path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"
+                                                              transform="translate(0)"></path>
+                                                        <rect fill="none" width="32" height="32"></rect>
+                                                    </svg>
+                                                    Copy to clipboard
+                                                </button>
+                                            </div>
+                                            <div class="text-sm p-4 text-gray-700 space-y-4"><pre
+                                                    class="v2-to-clipboard-content">git lfs install
+git clone https:<span class="hljs-string">//huggingface.co/distilbert-base-uncased</span></pre>
+                                                <pre><span class="hljs-comment"># if you want to clone without large files – just their pointers</span>
+<span class="hljs-comment"># prepend your git clone with the following env var:</span>
+GIT_LFS_SKIP_SMUDGE=1</pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container relative space-y-4 flex flex-col md:grid md:space-y-0 w-full
+		md:grid-cols-12
+		md:flex-1 md:grid-rows-full 
+		md:gap-6
+		
+	">
+            <section class="pt-8 border-gray-100 md:col-span-7 pb-24">
+                <div class="lg:pr-20 xl:pr-24 2xl:pr-36">
+                    <div class="prose dark:prose-light">
+                        <h1 class="relative group flex items-center">
+                            <a id="distilbert-base-model-uncased"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#distilbert-base-model-uncased">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            DistilBERT base model (uncased)
+                        </h1>
+                        <p>This model is a distilled version of the <a href="https://huggingface.co/bert-base-uncased"
+                                                                       rel="nofollow">BERT base model</a>. It was
+                            introduced in <a href="https://arxiv.org/abs/1910.01108" rel="nofollow">this paper</a>. The
+                            code for the distillation process can be found
+                            <a href="https://github.com/huggingface/transformers/tree/master/examples/distillation"
+                               rel="nofollow">here</a>. This model is uncased: it does
+                            not make a difference between english and English.</p>
+                        <h2 class="relative group flex items-center">
+                            <a id="model-description"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#model-description">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            Model description
+                        </h2>
+                        <p>DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the
+                            same corpus in a
+                            self-supervised fashion, using the BERT base model as a teacher. This means it was
+                            pretrained on the raw texts only,
+                            with no humans labelling them in any way (which is why it can use lots of publicly available
+                            data) with an automatic
+                            process to generate inputs and labels from those texts using the BERT base model. More
+                            precisely, it was pretrained
+                            with three objectives:</p>
+                        <ul>
+                            <li>Distillation loss: the model was trained to return the same probabilities as the BERT
+                                base model.
+                            </li>
+                            <li>Masked language modeling (MLM): this is part of the original training loss of the BERT
+                                base model. When taking a
+                                sentence, the model randomly masks 15% of the words in the input then run the entire
+                                masked sentence through the
+                                model and has to predict the masked words. This is different from traditional recurrent
+                                neural networks (RNNs) that
+                                usually see the words one after the other, or from autoregressive models like GPT which
+                                internally mask the future
+                                tokens. It allows the model to learn a bidirectional representation of the sentence.
+                            </li>
+                            <li>Cosine embedding loss: the model was also trained to generate hidden states as close as
+                                possible as the BERT base
+                                model.
+                            </li>
+                        </ul>
+                        <p>This way, the model learns the same inner representation of the English language than its
+                            teacher model, while being
+                            faster for inference or downstream tasks.</p>
+                        <h2 class="relative group flex items-center">
+                            <a id="intended-uses--limitations"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#intended-uses--limitations">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            Intended uses &amp; limitations
+                        </h2>
+                        <p>You can use the raw model for either masked language modeling or next sentence prediction,
+                            but it's mostly intended to
+                            be fine-tuned on a downstream task. See the <a
+                                    href="https://huggingface.co/models?filter=distilbert" rel="nofollow">model hub</a>
+                            to look for
+                            fine-tuned versions on a task that interests you.</p>
+                        <p>Note that this model is primarily aimed at being fine-tuned on tasks that use the whole
+                            sentence (potentially masked)
+                            to make decisions, such as sequence classification, token classification or question
+                            answering. For tasks such as text
+                            generation you should look at model like GPT2.</p>
+                        <h3 class="relative group flex items-center">
+                            <a id="how-to-use"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#how-to-use">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            How to use
+                        </h3>
+                        <p>You can use this model directly with a pipeline for masked language modeling:</p>
+                        <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span
+                                class="hljs-keyword">from</span> transformers <span class="hljs-keyword">import</span> pipeline
+<span class="hljs-meta">&gt;&gt;&gt; </span>unmasker = pipeline(<span
+                                    class="hljs-string">'fill-mask'</span>, model=<span class="hljs-string">'distilbert-base-uncased'</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>unmasker(<span class="hljs-string">"Hello I'm a [MASK] model."</span>)
+
+[{<span class="hljs-string">'sequence'</span>: <span class="hljs-string">"[CLS] hello i'm a role model. [SEP]"</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.05292855575680733</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">2535</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'role'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span class="hljs-string">"[CLS] hello i'm a fashion model. [SEP]"</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.03968575969338417</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">4827</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'fashion'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span
+                                    class="hljs-string">"[CLS] hello i'm a business model. [SEP]"</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.034743521362543106</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">2449</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'business'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span class="hljs-string">"[CLS] hello i'm a model model. [SEP]"</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.03462274372577667</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">2944</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'model'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span
+                                    class="hljs-string">"[CLS] hello i'm a modeling model. [SEP]"</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.018145186826586723</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">11643</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'modeling'</span>}]</code></pre>
+                        <p>Here is how to use this model to get the features of a given text in PyTorch:</p>
+                        <pre><code class="language-python"><span class="hljs-keyword">from</span> transformers <span
+                                class="hljs-keyword">import</span> DistilBertTokenizer, DistilBertModel
+tokenizer = DistilBertTokenizer.from_pretrained(<span class="hljs-string">'distilbert-base-uncased'</span>)
+model = DistilBertModel.from_pretrained(<span class="hljs-string">"distilbert-base-uncased"</span>)
+text = <span class="hljs-string">"Replace me by any text you'd like."</span>
+encoded_input = tokenizer(text, return_tensors=<span class="hljs-string">'pt'</span>)
+output = model(**encoded_input)</code></pre>
+                        <p>and in TensorFlow:</p>
+                        <pre><code class="language-python"><span class="hljs-keyword">from</span> transformers <span
+                                class="hljs-keyword">import</span> DistilBertTokenizer, TFDistilBertModel
+tokenizer = DistilBertTokenizer.from_pretrained(<span class="hljs-string">'distilbert-base-uncased'</span>)
+model = TFDistilBertModel.from_pretrained(<span class="hljs-string">"distilbert-base-uncased"</span>)
+text = <span class="hljs-string">"Replace me by any text you'd like."</span>
+encoded_input = tokenizer(text, return_tensors=<span class="hljs-string">'tf'</span>)
+output = model(encoded_input)</code></pre>
+                        <h3 class="relative group flex items-center">
+                            <a id="limitations-and-bias"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#limitations-and-bias">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            Limitations and bias
+                        </h3>
+                        <p>Even if the training data used for this model could be characterized as fairly neutral, this
+                            model can have biased
+                            predictions. It also inherits some of
+                            <a href="https://huggingface.co/bert-base-uncased#limitations-and-bias" rel="nofollow">the
+                                bias of its teacher model</a>.</p>
+                        <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span
+                                class="hljs-keyword">from</span> transformers <span class="hljs-keyword">import</span> pipeline
+<span class="hljs-meta">&gt;&gt;&gt; </span>unmasker = pipeline(<span
+                                    class="hljs-string">'fill-mask'</span>, model=<span class="hljs-string">'distilbert-base-uncased'</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>unmasker(<span
+                                    class="hljs-string">"The White man worked as a [MASK]."</span>)
+
+[{<span class="hljs-string">'sequence'</span>: <span class="hljs-string">'[CLS] the white man worked as a blacksmith. [SEP]'</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.1235365942120552</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">20987</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'blacksmith'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span class="hljs-string">'[CLS] the white man worked as a carpenter. [SEP]'</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.10142576694488525</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">10533</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'carpenter'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span
+                                    class="hljs-string">'[CLS] the white man worked as a farmer. [SEP]'</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.04985016956925392</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">7500</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'farmer'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span
+                                    class="hljs-string">'[CLS] the white man worked as a miner. [SEP]'</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.03932540491223335</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">18594</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'miner'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span class="hljs-string">'[CLS] the white man worked as a butcher. [SEP]'</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.03351764753460884</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">14998</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'butcher'</span>}]
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>unmasker(<span
+                                    class="hljs-string">"The Black woman worked as a [MASK]."</span>)
+
+[{<span class="hljs-string">'sequence'</span>: <span class="hljs-string">'[CLS] the black woman worked as a waitress. [SEP]'</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.13283951580524445</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">13877</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'waitress'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span class="hljs-string">'[CLS] the black woman worked as a nurse. [SEP]'</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.12586183845996857</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">6821</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'nurse'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span
+                                    class="hljs-string">'[CLS] the black woman worked as a maid. [SEP]'</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.11708822101354599</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">10850</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'maid'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span class="hljs-string">'[CLS] the black woman worked as a prostitute. [SEP]'</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.11499975621700287</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">19215</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'prostitute'</span>},
+ {<span class="hljs-string">'sequence'</span>: <span class="hljs-string">'[CLS] the black woman worked as a housekeeper. [SEP]'</span>,
+  <span class="hljs-string">'score'</span>: <span class="hljs-number">0.04722772538661957</span>,
+  <span class="hljs-string">'token'</span>: <span class="hljs-number">22583</span>,
+  <span class="hljs-string">'token_str'</span>: <span class="hljs-string">'housekeeper'</span>}]</code></pre>
+                        <p>This bias will also affect all fine-tuned versions of this model.</p>
+                        <h2 class="relative group flex items-center">
+                            <a id="training-data"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#training-data">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            Training data
+                        </h2>
+                        <p>DistilBERT pretrained on the same data as BERT, which is <a
+                                href="https://yknzhu.wixsite.com/mbweb" rel="nofollow">BookCorpus</a>, a dataset
+                            consisting of 11,038 unpublished books and <a
+                                    href="https://en.wikipedia.org/wiki/English_Wikipedia" rel="nofollow">English
+                                Wikipedia</a>
+                            (excluding lists, tables and headers).</p>
+                        <h2 class="relative group flex items-center">
+                            <a id="training-procedure"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#training-procedure">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            Training procedure
+                        </h2>
+                        <h3 class="relative group flex items-center">
+                            <a id="preprocessing"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#preprocessing">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            Preprocessing
+                        </h3>
+                        <p>The texts are lowercased and tokenized using WordPiece and a vocabulary size of 30,000. The
+                            inputs of the model are
+                            then of the form:</p>
+                        <pre><code>[CLS] Sentence A [SEP] Sentence B [SEP]</code></pre>
+                        <p>With probability 0.5, sentence A and sentence B correspond to two consecutive sentences in
+                            the original corpus and in
+                            the other cases, it's another random sentence in the corpus. Note that what is considered a
+                            sentence here is a
+                            consecutive span of text usually longer than a single sentence. The only constrain is that
+                            the result with the two
+                            "sentences" has a combined length of less than 512 tokens.</p>
+                        <p>The details of the masking procedure for each sentence are the following:</p>
+                        <ul>
+                            <li>15% of the tokens are masked.</li>
+                            <li>In 80% of the cases, the masked tokens are replaced by <code>[MASK]</code>.</li>
+                            <li>In 10% of the cases, the masked tokens are replaced by a random token (different) from
+                                the one they replace.
+                            </li>
+                            <li>In the 10% remaining cases, the masked tokens are left as is.</li>
+                        </ul>
+                        <h3 class="relative group flex items-center">
+                            <a id="pretraining"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#pretraining">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            Pretraining
+                        </h3>
+                        <p>The model was trained on 8 16 GB V100 for 90 hours. See the
+                            <a href="https://github.com/huggingface/transformers/tree/master/examples/distillation"
+                               rel="nofollow">training code</a> for all hyperparameters
+                            details.</p>
+                        <h2 class="relative group flex items-center">
+                            <a id="evaluation-results"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#evaluation-results">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            Evaluation results
+                        </h2>
+                        <p>When fine-tuned on downstream tasks, this model achieves the following results:</p>
+                        <p>Glue test results:</p>
+                        <div class="max-w-full overflow-auto">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th align="center">Task</th>
+                                    <th align="center">MNLI</th>
+                                    <th align="center">QQP</th>
+                                    <th align="center">QNLI</th>
+                                    <th align="center">SST-2</th>
+                                    <th align="center">CoLA</th>
+                                    <th align="center">STS-B</th>
+                                    <th align="center">MRPC</th>
+                                    <th align="center">RTE</th>
+                                </tr>
+
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td align="center"></td>
+                                    <td align="center">82.2</td>
+                                    <td align="center">88.5</td>
+                                    <td align="center">89.2</td>
+                                    <td align="center">91.3</td>
+                                    <td align="center">51.3</td>
+                                    <td align="center">85.8</td>
+                                    <td align="center">87.5</td>
+                                    <td align="center">59.9</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3 class="relative group flex items-center">
+                            <a id="bibtex-entry-and-citation-info"
+                               class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full"
+                               href="https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D.#bibtex-entry-and-citation-info">
+                                <span class="header-link"><svg class="text-gray-500 hover:text-black w-4"
+                                                               xmlns="http://www.w3.org/2000/svg"
+                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               aria-hidden="true" role="img" width="1em" height="1em"
+                                                               preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path
+                                        d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48z"
+                                        fill="currentColor"></path><path
+                                        d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0z"
+                                        fill="currentColor"></path></svg></span>
+                            </a>
+                            BibTeX entry and citation info
+                        </h3>
+                        <pre><code class="language-bibtex">@article{Sanh2019DistilBERTAD,
+  title={DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter},
+  author={Victor Sanh and Lysandre Debut and Julien Chaumond and Thomas Wolf},
+  journal={ArXiv},
+  year={2019},
+  volume={abs/1910.01108}
+}</code></pre>
+                        <a href="https://huggingface.co/exbert/?model=distilbert-base-uncased">
+                            <img width="300px" src="button.png">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section
+                    class="pt-8 border-gray-100 md:col-span-5 pt-6 md:pb-24 md:pl-6 md:border-l order-first md:order-none">
+                <div class="mb-5 flex justify-between">
+                    <dl>
+                        <dt class="-mb-1 text-sm text-gray-500">Downloads last month
+                        </dt>
+                        <dd class="font-semibold">3,111,664</dd>
+                    </dl>
+                    <div class="model-graph flex-none" style="width: 200px; height: 40px;">
+                        <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none"
+                             style="overflow: visible;">
+                            <defs>
+                                <lineargradient id="fill-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(137, 86, 255); stop-opacity:0.3"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(137, 86, 255); stop-opacity:0.05"></stop>
+                                </lineargradient>
+                            </defs>
+
+                            <path d="M 0,22.140238066351216C 0.15000000000000002,22.23705531065906 2.7,24.03819542740054 3,24.076582952508048C 3.3,24.114970477615554 5.65,23.056704209972903 6,22.907988568501366C 6.35,22.75927292702983 9.65,19.871115919170684 10,21.102270123077346C 10.35,22.33342432698401 12.65,48.33618615278844 13,47.53107264663458C 13.35,46.72595914048071 16.65,5.806330124964614 17,5C 17.35,4.193669875035386 19.65,31.081745999649502 20,31.40447014734231C 20.35,31.727194295035115 23.65,10.168324773189907 24,11.454482953856115C 24.35,12.740641134522324 26.65,55.30014424178698 27,57.12763376066648C 27.35,58.95512327954597 30.65,47.599043218613936 31,48.004273331446065C 31.35,48.409503444278194 33.7,65.11147059220016 34,65.23223601730902C 34.3,65.35300144241788 36.65,52.36178569984227 37,50.41958183362316C 37.35,48.47737796740405 40.65,28.112779889729183 41,26.388158692926766C 41.35,24.66353749612435 43.65,16.148934700260167 44,15.927157897574844C 44.35,15.70538109488952 47.65,21.26417647376012 48,21.95262263922028C 48.35,22.64106880468044 50.65,29.379504185707933 51,29.696081206778018C 51.35,30.012658227848103 54.65,28.939440355347056 55,28.284163060621992C 55.35,27.62888576589693 57.65,16.62271167819253 58,16.590535312276728C 58.35,16.558358946360926 61.65,27.085089173777646 62,27.640635742305975C 62.35,28.196182310834303 64.7,27.69535157250509 65,27.701466682843318C 65.3,27.707581793181546 67.65,27.703099513352477 68,27.76293794907052C 68.35,27.82277638478856 71.65,28.041735754438463 72,28.898235397204132C 72.35,29.754735039969802 74.65,43.65883110230383 75,44.89293080438387C 75.35,46.12703050646392 78.65,53.803446974292605 79,53.580229438805084C 79.35,53.35701190331756 81.65,41.308643722786165 82,40.4285800946334C 82.35,39.54851646648064 85.65,36.319738207896904 86,35.97895687574986C 86.35,35.63817554360281 88.65,32.98716315498579 89,33.61295345169249C 89.35,34.238743748399195 92.65,47.919206063547264 93,48.49476280988393C 93.35,49.070319556220596 95.65,44.591689583586096 96,45.124088378425746C 96.35,45.6564871732654 99.8,58.44180619026436 100,59.142738706676916"
+                                  fill="none" stroke="rgb(137, 86, 255)" stroke-width="3"
+                                  vector-effect="non-scaling-stroke"></path>
+                            <path d="M 0,100 0,22.140238066351216C 0.15000000000000002,22.23705531065906 2.7,24.03819542740054 3,24.076582952508048C 3.3,24.114970477615554 5.65,23.056704209972903 6,22.907988568501366C 6.35,22.75927292702983 9.65,19.871115919170684 10,21.102270123077346C 10.35,22.33342432698401 12.65,48.33618615278844 13,47.53107264663458C 13.35,46.72595914048071 16.65,5.806330124964614 17,5C 17.35,4.193669875035386 19.65,31.081745999649502 20,31.40447014734231C 20.35,31.727194295035115 23.65,10.168324773189907 24,11.454482953856115C 24.35,12.740641134522324 26.65,55.30014424178698 27,57.12763376066648C 27.35,58.95512327954597 30.65,47.599043218613936 31,48.004273331446065C 31.35,48.409503444278194 33.7,65.11147059220016 34,65.23223601730902C 34.3,65.35300144241788 36.65,52.36178569984227 37,50.41958183362316C 37.35,48.47737796740405 40.65,28.112779889729183 41,26.388158692926766C 41.35,24.66353749612435 43.65,16.148934700260167 44,15.927157897574844C 44.35,15.70538109488952 47.65,21.26417647376012 48,21.95262263922028C 48.35,22.64106880468044 50.65,29.379504185707933 51,29.696081206778018C 51.35,30.012658227848103 54.65,28.939440355347056 55,28.284163060621992C 55.35,27.62888576589693 57.65,16.62271167819253 58,16.590535312276728C 58.35,16.558358946360926 61.65,27.085089173777646 62,27.640635742305975C 62.35,28.196182310834303 64.7,27.69535157250509 65,27.701466682843318C 65.3,27.707581793181546 67.65,27.703099513352477 68,27.76293794907052C 68.35,27.82277638478856 71.65,28.041735754438463 72,28.898235397204132C 72.35,29.754735039969802 74.65,43.65883110230383 75,44.89293080438387C 75.35,46.12703050646392 78.65,53.803446974292605 79,53.580229438805084C 79.35,53.35701190331756 81.65,41.308643722786165 82,40.4285800946334C 82.35,39.54851646648064 85.65,36.319738207896904 86,35.97895687574986C 86.35,35.63817554360281 88.65,32.98716315498579 89,33.61295345169249C 89.35,34.238743748399195 92.65,47.919206063547264 93,48.49476280988393C 93.35,49.070319556220596 95.65,44.591689583586096 96,45.124088378425746C 96.35,45.6564871732654 99.8,58.44180619026436 100,59.142738706676916 L 100,100"
+                                  fill="url(#fill-gradient)" stroke="none" vector-effect="non-scaling-stroke"></path>
+
+                        </svg>
+                    </div>
+                </div>
+                <div class="border-t pt-4 border-gray-100 bg-white">
+                    <div class="SVELTE_HYDRATER " id="SVELTE_HYDRATER_3d51go05g"
+                         data-props="{&quot;apiUrl&quot;:&quot;https://api-inference.huggingface.co&quot;,&quot;apiToken&quot;:&quot;&quot;,&quot;model&quot;:{&quot;autoArchitecture&quot;:&quot;AutoModelForMaskedLM&quot;,&quot;branch&quot;:&quot;main&quot;,&quot;cardData&quot;:{&quot;language&quot;:&quot;en&quot;,&quot;tags&quot;:[&quot;exbert&quot;],&quot;license&quot;:&quot;apache-2.0&quot;,&quot;datasets&quot;:[&quot;bookcorpus&quot;,&quot;wikipedia&quot;]},&quot;cardSource&quot;:true,&quot;config&quot;:{&quot;architectures&quot;:[&quot;DistilBertForMaskedLM&quot;],&quot;model_type&quot;:&quot;distilbert&quot;},&quot;pipeline_tag&quot;:&quot;fill-mask&quot;,&quot;mask_token&quot;:&quot;[MASK]&quot;,&quot;modelId&quot;:&quot;distilbert-base-uncased&quot;,&quot;private&quot;:false,&quot;tags&quot;:[&quot;pytorch&quot;,&quot;tf&quot;,&quot;rust&quot;,&quot;distilbert&quot;,&quot;masked-lm&quot;,&quot;en&quot;,&quot;dataset:bookcorpus&quot;,&quot;dataset:wikipedia&quot;,&quot;arxiv:1910.01108&quot;,&quot;exbert&quot;,&quot;license:apache-2.0&quot;,&quot;fill-mask&quot;],&quot;tag_objs&quot;:[{&quot;id&quot;:&quot;fill-mask&quot;,&quot;label&quot;:&quot;Fill-Mask&quot;,&quot;type&quot;:&quot;pipeline_tag&quot;},{&quot;id&quot;:&quot;pytorch&quot;,&quot;label&quot;:&quot;PyTorch&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;tf&quot;,&quot;label&quot;:&quot;TensorFlow&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;rust&quot;,&quot;label&quot;:&quot;Rust&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;dataset:bookcorpus&quot;,&quot;label&quot;:&quot;bookcorpus&quot;,&quot;type&quot;:&quot;dataset&quot;},{&quot;id&quot;:&quot;dataset:wikipedia&quot;,&quot;label&quot;:&quot;wikipedia&quot;,&quot;type&quot;:&quot;dataset&quot;},{&quot;id&quot;:&quot;en&quot;,&quot;label&quot;:&quot;en&quot;,&quot;type&quot;:&quot;language&quot;},{&quot;id&quot;:&quot;arxiv:1910.01108&quot;,&quot;label&quot;:&quot;arxiv:1910.01108&quot;,&quot;type&quot;:&quot;arxiv&quot;},{&quot;id&quot;:&quot;license:apache-2.0&quot;,&quot;label&quot;:&quot;apache-2.0&quot;,&quot;type&quot;:&quot;license&quot;},{&quot;id&quot;:&quot;distilbert&quot;,&quot;label&quot;:&quot;distilbert&quot;,&quot;type&quot;:&quot;other&quot;},{&quot;id&quot;:&quot;masked-lm&quot;,&quot;label&quot;:&quot;masked-lm&quot;,&quot;type&quot;:&quot;other&quot;},{&quot;id&quot;:&quot;exbert&quot;,&quot;label&quot;:&quot;exbert&quot;,&quot;type&quot;:&quot;other&quot;}],&quot;widgetData&quot;:[{&quot;text&quot;:&quot;Paris is the [MASK] of France.&quot;},{&quot;text&quot;:&quot;The goal of life is [MASK].&quot;}]},&quot;shouldUpdateUrl&quot;:true}"
+                         data-target="InferenceWidget">
+                        <div class="flex flex-col w-full max-w-full
+	">
+                            <div class="font-semibold flex items-center mb-2">
+                                <div class="text-lg flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         aria-hidden="true" focusable="false" role="img"
+                                         class="-ml-1 mr-1 text-yellow-500" width="1em" height="1em"
+                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                        <path d="M11 15H6l7-14v8h5l-7 14v-8z" fill="currentColor"></path>
+                                    </svg>
+                                    Hosted inference API
+                                </div>
+                                <a target="_blank" href="https://huggingface.co/docs">
+                                    <svg class="ml-1.5 text-sm text-gray-400 hover:text-black"
+                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         aria-hidden="true" focusable="false" role="img" width="1em" height="1em"
+                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                                        <path d="M17 22v-8h-4v2h2v6h-3v2h8v-2h-3z" fill="currentColor"></path>
+                                        <path d="M16 8a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 16 8z"
+                                              fill="currentColor"></path>
+                                        <path d="M16 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14zm0-26a12 12 0 1 0 12 12A12 12 0 0 0 16 4z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                </a></div>
+                            <div class="flex items-center text-sm text-gray-500 mb-1.5">
+                                <div class="inline-flex items-center">
+                                    <svg class="mr-1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                         fill="currentColor" focusable="false" role="img" width="1em" height="1em"
+                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 18 19">
+                                        <path d="M12.3625 13.85H10.1875V12.7625H12.3625V10.5875H13.45V12.7625C13.4497 13.0508 13.335 13.3272 13.1312 13.5311C12.9273 13.735 12.6508 13.8497 12.3625 13.85V13.85Z"></path>
+                                        <path d="M5.8375 8.41246H4.75V6.23746C4.75029 5.94913 4.86496 5.67269 5.06884 5.4688C5.27272 5.26492 5.54917 5.15025 5.8375 5.14996H8.0125V6.23746H5.8375V8.41246Z"></path>
+                                        <path d="M15.625 5.14998H13.45V2.97498C13.4497 2.68665 13.335 2.4102 13.1312 2.20632C12.9273 2.00244 12.6508 1.88777 12.3625 1.88748H2.575C2.28666 1.88777 2.01022 2.00244 1.80633 2.20632C1.60245 2.4102 1.48778 2.68665 1.4875 2.97498V12.7625C1.48778 13.0508 1.60245 13.3273 1.80633 13.5311C2.01022 13.735 2.28666 13.8497 2.575 13.85H4.75V16.025C4.75028 16.3133 4.86495 16.5898 5.06883 16.7936C5.27272 16.9975 5.54916 17.1122 5.8375 17.1125H15.625C15.9133 17.1122 16.1898 16.9975 16.3937 16.7936C16.5975 16.5898 16.7122 16.3133 16.7125 16.025V6.23748C16.7122 5.94915 16.5975 5.6727 16.3937 5.46882C16.1898 5.26494 15.9133 5.15027 15.625 5.14998V5.14998ZM15.625 16.025H5.8375V13.85H8.0125V12.7625H5.8375V10.5875H4.75V12.7625H2.575V2.97498H12.3625V5.14998H10.1875V6.23748H12.3625V8.41248H13.45V6.23748H15.625V16.025Z"></path>
+                                    </svg>
+                                    <span>Fill-Mask</span></div>
+                                <div class="ml-auto">Mask token: <code>[MASK]</code></div>
+                            </div>
+                            <form>
+                                <div class="flex h-10"><input class="form-input-alt flex-1 rounded-r-none "
+                                                              placeholder="Your sentence here..." required=""
+                                                              type="text">
+                                    <button class="btn-widget w-24 h-10 px-5 rounded-l-none border-l-0 " type="submit">
+                                        Compute
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="mt-1.5">
+                                <div class="text-gray-400 text-xs">Computation time on cpu: cached</div>
+                            </div>
+                            <div class="space-y-4 mt-4">
+                                <div class="flex items-start justify-between font-mono text-xs animate__animated animate__fadeIn leading-none"
+                                     style="animation-delay: 0s;">
+                                    <div class="flex-1">
+                                        <div class="h-1 mb-1 rounded bg-gradient-to-r from-purple-400 to-purple-200"
+                                             style="width: 80%;"></div>
+                                        <p>happiness</p></div>
+                                    <p class="pl-2">0.036</p></div>
+                                <div class="flex items-start justify-between font-mono text-xs animate__animated animate__fadeIn leading-none"
+                                     style="animation-delay: 0.04s;">
+                                    <div class="flex-1">
+                                        <div class="h-1 mb-1 rounded bg-gradient-to-r from-purple-400 to-purple-200"
+                                             style="width: 68%;"></div>
+                                        <p>survival</p></div>
+                                    <p class="pl-2">0.031</p></div>
+                                <div class="flex items-start justify-between font-mono text-xs animate__animated animate__fadeIn leading-none"
+                                     style="animation-delay: 0.08s;">
+                                    <div class="flex-1">
+                                        <div class="h-1 mb-1 rounded bg-gradient-to-r from-purple-400 to-purple-200"
+                                             style="width: 38%;"></div>
+                                        <p>salvation</p></div>
+                                    <p class="pl-2">0.017</p></div>
+                                <div class="flex items-start justify-between font-mono text-xs animate__animated animate__fadeIn leading-none"
+                                     style="animation-delay: 0.12s;">
+                                    <div class="flex-1">
+                                        <div class="h-1 mb-1 rounded bg-gradient-to-r from-purple-400 to-purple-200"
+                                             style="width: 37%;"></div>
+                                        <p>freedom</p></div>
+                                    <p class="pl-2">0.017</p></div>
+                                <div class="flex items-start justify-between font-mono text-xs animate__animated animate__fadeIn leading-none"
+                                     style="animation-delay: 0.16s;">
+                                    <div class="flex-1">
+                                        <div class="h-1 mb-1 rounded bg-gradient-to-r from-purple-400 to-purple-200"
+                                             style="width: 34%;"></div>
+                                        <p>unity</p></div>
+                                    <p class="pl-2">0.015</p></div>
+                            </div>
+                            <div class="mt-auto pt-4 flex items-center text-xs text-gray-500">
+                                <button class="flex items-center ">
+                                    <svg class="mr-1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                         role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                         viewBox="0 0 32 32" style="transform: rotate(360deg);">
+                                        <path d="M31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7z"
+                                              fill="currentColor"></path>
+                                        <path d="M1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7z"
+                                              fill="currentColor"></path>
+                                        <path d="M12.419 25.484L17.639 6l1.932.518L14.35 26z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                    JSON Output
+                                </button>
+                                <button class="flex items-center ml-auto">
+                                    <svg class="mr-1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                         role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                         viewBox="0 0 32 32">
+                                        <path d="M22 16h2V8h-8v2h6v6z" fill="currentColor"></path>
+                                        <path d="M8 24h8v-2h-6v-6H8v8z" fill="currentColor"></path>
+                                        <path d="M26 28H6a2.002 2.002 0 0 1-2-2V6a2.002 2.002 0 0 1 2-2h20a2.002 2.002 0 0 1 2 2v20a2.002 2.002 0 0 1-2 2zM6 6v20h20.001L26 6z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                    Maximize
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+
+<script defer="" src="bundle.c8d62505.js.下载"></script>
+<script>
+    if (!(
+        ['localhost', 'huggingface.test'].includes(window.location.hostname)
+        || window.location.hostname.includes('ngrok.io')
+    )) {
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ganalytics');
+        ganalytics('create', 'UA-83738774-2', 'auto');
+        ganalytics('send', 'pageview');
+    }
+</script>
+
+
+<iframe name="__privateStripeMetricsController1250" frameborder="0" allowtransparency="true" scrolling="no"
+        allow="payment *"
+        src="m-outer-257db74dfc4594d2bb652dc7b646dbc5.html"
+        aria-hidden="true" tabindex="-1"
+        style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe>
+</body>
+</html>
