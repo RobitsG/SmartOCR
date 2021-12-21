@@ -2,6 +2,10 @@
 
 使用django编写的前端应用，需调用百度API
 
+**Demo站：**http://madokacloud.top:8000/userprofile/login/
+
+**本项目参考杜塞大佬的django个人博客项目，教程链接：**https://www.dusaiphoto.com/article/2/
+
 #### 文件结构图
 
 ```
@@ -45,3 +49,41 @@ smartocr
 pip install -r requirements.txt
 ```
 
+#### 下载与设置
+
+git clone 下载：
+
+```
+git clone https://github.com/RobitsG/SmartOCR.git
+```
+
+打开 smartocr/smartocr/settings.py 文件末尾，按照注释编辑个人信息
+
+```
+# SMTP服务器，改为你的邮箱的smtp!
+EMAIL_HOST = 'smtp.qq.com'
+# 改为你自己的邮箱名！
+EMAIL_HOST_USER = '######'
+# 你的邮箱密码（QQ邮箱为特殊验证码）
+EMAIL_HOST_PASSWORD = '######'
+# 发送邮件的端口
+EMAIL_PORT = 25
+# 是否使用 TLS
+EMAIL_USE_TLS = True
+# 默认的发件人
+DEFAULT_FROM_EMAIL = '###### <xxxxxx@qq.com>'
+```
+
+#### 运行方法
+
+```
+加载数据库：
+python manage.py makemigrations
+python manage.py migrate
+创建超级管理员账户：
+python manage.py createsuperuser
+运行程序：
+python manage.py runserver
+```
+
+接着访问 127.0.0.1:8000/userprofile/login/ 即可。
